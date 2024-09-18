@@ -10,8 +10,30 @@
 
 <body>
   <div>
-    <div id="a"></div>
+    <button id="btn1">section1</button>
+    <button id="btn2">section2</button>
+    <button id="btn3">section3</button>
+    <button id="btn4">section4</button>
   </div>
+
+  <!-- test case -->
+  <section class="section" id="section1">
+    ScrollTrigger 简单测试
+    <div class="page" id="page-1-1">
+    </div>
+    <div class="page" id="page-1-2">
+      <div id="page-1-2-a">page-1-2-a</div>
+    </div>
+    <div class="page" id="page-1-3">
+      <div id="page-1-3-a">page-1-3-a</div>
+    </div>
+    <div class="page" id="page-1-4"></div>
+  </section>
+
+
+  <section class="section" id="section2">section2</section>
+  <section class="section" id="section3">section3</section>
+  <section class="section" id="section4"> section4</section>
 
 
   <script src="./assets/gsap.min.js"></script>
@@ -19,13 +41,10 @@
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script>
 
 
+  <script src="./src/util.js"></script>
+  <script src="./src/section1.js"></script>
   <script src="./src/index.js"></script>
 
-  <!-- lottie -->
-  <!-- https://app.lottiefiles.com/animation/b2749904-f4dc-4051-a61b-d0d5454aa87b?panel=download -->
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-  <dotlottie-player src="https://lottie.host/42d7185b-ca12-44a0-9b7b-420544f61885/ZOmEkFDInj.json"
-    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 </body>
 
 </html>
