@@ -65,8 +65,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       let tab = index + 1;
       switchSection(tab)
       setPageBgColor()
-      // make animation
       setTimeout(() => {
+        ScrollTrigger.getAll().forEach((trigger) => {
+          trigger.kill();
+        })
+        // make animation
         showAnime(tab)
       }, 0)
     })

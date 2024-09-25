@@ -18,6 +18,12 @@ html, body {
   height: 100vh;
 }
 
+.page2 {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+}
+
 
 /* section1 */
 #page-1-2-a {
@@ -40,11 +46,25 @@ html, body {
 
 
 /* section2 */
-
+#page-2-1 {
+  height: 300px;
+}
 
 
 /* section3 */
+.card {
+  background: #0ae448;
+  height: 145px;
+  width: 30%;
+  opacity: 0;
+}
 
+.mr-3 {
+  margin-right: 3%;
+}
 
+.mb-3 {
+  margin-bottom: 3%;
+}
 
 /* section4 */

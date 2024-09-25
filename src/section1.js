@@ -2,6 +2,7 @@
 // 基础 case 展示
 
 const showAnime1 = () => {
+
   gsap.to("#page-1-2-a", {
     scrollTrigger: {
       trigger: "#page-1-2-a",
@@ -9,16 +10,17 @@ const showAnime1 = () => {
       // 打个
       start: "20px 80%",
       // start: "top center",
-      // end: "+=300",
+      end: "+=300",
       // ScrollTrigger 插件中，scrub 属性用于将滚动位置与动画的播放进度同步。
       // 具体来说，scrub 属性可以使动画在滚动页面时逐帧播放，滚动的速度和动画的播放速度保持同步
       // 这样，动画的进度与滚动条的位置紧密关联，提供一种流畅的滚动动画效果。
       scrub: true,
+      // scrub: 1/2/3  以几倍的速度播放
       // 是否显示标记 （仅用于开发环境）
       markers: true,
       // 动画的不同滚动状态设置不同的行为
       // 触发器进入视口时播放动画，离开视口时暂停动画，触发器从下方进入视口时继续播放动画，触发器从下方离开视口时重置动画
-      toggleActions: "play pause resume reset",
+      // toggleActions: "play pause resume reset",
     },
     x: 400,
     duration: 8,
@@ -39,6 +41,11 @@ const showAnime1 = () => {
       toggleActions: "restart pause reverse pause",
       scrub: true,
       markers: true,
+      // pin 属性用于将滚动触发器固定在视口中的某个位置
+      pin: true,
+      // anticipatePin 属性用于定义滚动触发器的固定位置相对于视口的位置
+      // 用于优化和改善固定（pinning）效果，特别是在固定元素时防止内容跳跃和闪烁的现象。
+      anticipatePin: 1
     }
   });
 
